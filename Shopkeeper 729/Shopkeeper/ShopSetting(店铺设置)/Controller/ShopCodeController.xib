@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShopCodeController">
+            <connections>
+                <outlet property="_shopQRCodeImageView" destination="oQF-mW-L6N" id="kkV-GG-cMM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oQF-mW-L6N">
+                    <rect key="frame" x="30" y="30" width="260" height="261"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="oQF-mW-L6N" secondAttribute="height" multiplier="15:8" constant="-228.4375" id="v1k-iL-DPO"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="宣传易云店，用此二维码" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4E9-76-Cia">
+                    <rect key="frame" x="0.0" y="340" width="320" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="fJg-8Z-o3r"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.31372549019607843" green="0.31372549019607843" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4E9-76-Cia" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="20g-Ae-glb"/>
+                <constraint firstAttribute="trailing" secondItem="4E9-76-Cia" secondAttribute="trailing" id="7c0-Kk-Q5d"/>
+                <constraint firstItem="oQF-mW-L6N" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="C32-ZS-9Kp"/>
+                <constraint firstItem="oQF-mW-L6N" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="bLe-kj-gxj"/>
+                <constraint firstAttribute="trailing" secondItem="oQF-mW-L6N" secondAttribute="trailing" constant="30" id="bnQ-C1-eOH"/>
+                <constraint firstItem="4E9-76-Cia" firstAttribute="top" secondItem="oQF-mW-L6N" secondAttribute="bottom" constant="50" id="pF8-7q-jL3"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

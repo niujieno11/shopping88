@@ -1,0 +1,52 @@
+//
+//  PrefixHeader.pch
+//  Shopkeeper
+//
+//  Created by 张耀文 on 16/5/3.
+//  Copyright © 2016年 张耀文. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "ZYWMacros.h"
+#import "BaseController.h"
+#import "UIView+Extension.h"
+#import "NetWorkRequest.h"
+#import "UIImageView+WebCache.h"
+#import "MJExtension.h"
+#import "MBProgressHUD.h"
+#import "MJRefresh.h"
+#import "Userinfo.h"
+#import "UUID.h"
+#import "AutoSizeScale.h"
+#import "AFAppDotNetAPIClient.h"
+#import "LBProgressHUD.h"
+#import "LCProgressHUD.h"
+
+
+#define UISCREENWIDTH [UIScreen mainScreen].bounds.size.width
+#define UISCREENHEIGHT [UIScreen mainScreen].bounds.size.height
+
+#define UISCREENORGINX  [UIScreen mainScreen].bounds.origin.x
+#define UISCREENORGINY [UIScreen mainScreen].bounds.origin.y
+
+//                  http://www.tianview.com/api-ydz_update_store.html
+#define UPDATEURL @"http://www.tianview.com/api-ydz_update_store.html"
+
+//认证资料提交认证图片放入字典
+#define  LOADURL @"http://www.ejoydg.com/api-upload_pic.html"
+#define  UPLOADURL @"http://www.tianview.com/api-upload_pic.html"
+
+
+//分销二维码
+#define FENXIAOCORDEURL  http://www.tianview.com/api-
+
+
+#endif /* PrefixHeader_pch */
